@@ -1,7 +1,7 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
 const { expect } = require('chai');
 
-const BASE_URL = 'http://localhost:5173';
+const BASE_URL = process.env.BASE_URL || 'http://localhost:5173';
 
 Given('I navigate to the e-commerce website', { timeout: 10000 }, async function () {
     await this.navigate(BASE_URL);
