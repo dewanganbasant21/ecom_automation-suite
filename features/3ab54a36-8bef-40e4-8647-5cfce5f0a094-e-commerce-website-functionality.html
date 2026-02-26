@@ -1059,7 +1059,7 @@ body.darkmode .navbar-text {
 
                     
                         <li>
-                            <span class="step skipped-background" data-bs-toggle="tooltip" title="Scenario is skipped">4</span>
+                            <span class="step skipped-background" data-bs-toggle="tooltip" title="Scenario is skipped">3</span>
                         </li>
                     
 
@@ -1069,6 +1069,10 @@ body.darkmode .navbar-text {
                         </li>
                     
 
+                    
+                        <li>
+                            <span class="step passed-background" data-bs-toggle="tooltip" title="Scenario passed">1</span>
+                        </li>
                     
 
                     
@@ -1089,8 +1093,8 @@ body.darkmode .navbar-text {
 
                                 
                                     
-                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step failed">
-                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-bs-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1111,8 +1115,6 @@ body.darkmode .navbar-text {
                                     
 
                                     
-                                        <a href="#error0-1-error" data-bs-toggle="collapse">+ Show Error</a>
-                                    
 
                                     
 
@@ -1129,15 +1131,6 @@ body.darkmode .navbar-text {
                             </div>
 
                         
-                            
-                                <div id="error0-1-error" class="scenario-step-collapse collapse">
-                                    <pre class=info>page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/
-Call log:
-  - navigating to "http://localhost:5173/", waiting until "load"
-
-    at CustomWorld.navigate (/home/runner/work/ecom_automation-suite/ecom_automation-suite/support/world.js:36:29)
-    at CustomWorld.(anonymous) (/home/runner/work/ecom_automation-suite/ecom_automation-suite/step_definitions/steps.js:7:16)</pre>
-                                </div>
                             
 
                             
@@ -1164,8 +1157,8 @@ Call log:
 
                                 
                                     
-                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step failed">
+                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
                                         </div>
                                     
                                 
@@ -1186,6 +1179,8 @@ Call log:
                                     
 
                                     
+                                        <a href="#error0-2-error" data-bs-toggle="collapse">+ Show Error</a>
+                                    
 
                                     
 
@@ -1202,6 +1197,13 @@ Call log:
                             </div>
 
                         
+                            
+                                <div id="error0-2-error" class="scenario-step-collapse collapse">
+                                    <pre class=info>Error: function timed out, ensure the promise resolves within 5000 milliseconds
+    at Timeout.(anonymous) (/home/runner/work/ecom_automation-suite/ecom_automation-suite/node_modules/@cucumber/cucumber/lib/time.js:54:20)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)</pre>
+                                </div>
                             
 
                             
@@ -1445,7 +1447,7 @@ Call log:
 
                     
                         <li>
-                            <span class="step skipped-background" data-bs-toggle="tooltip" title="Scenario is skipped">3</span>
+                            <span class="step skipped-background" data-bs-toggle="tooltip" title="Scenario is skipped">2</span>
                         </li>
                     
 
@@ -1455,6 +1457,10 @@ Call log:
                         </li>
                     
 
+                    
+                        <li>
+                            <span class="step passed-background" data-bs-toggle="tooltip" title="Scenario passed">1</span>
+                        </li>
                     
 
                     
@@ -1475,8 +1481,8 @@ Call log:
 
                                 
                                     
-                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step failed">
-                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-bs-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1497,8 +1503,6 @@ Call log:
                                     
 
                                     
-                                        <a href="#error1-1-error" data-bs-toggle="collapse">+ Show Error</a>
-                                    
 
                                     
 
@@ -1515,15 +1519,6 @@ Call log:
                             </div>
 
                         
-                            
-                                <div id="error1-1-error" class="scenario-step-collapse collapse">
-                                    <pre class=info>page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/
-Call log:
-  - navigating to "http://localhost:5173/", waiting until "load"
-
-    at CustomWorld.navigate (/home/runner/work/ecom_automation-suite/ecom_automation-suite/support/world.js:36:29)
-    at CustomWorld.(anonymous) (/home/runner/work/ecom_automation-suite/ecom_automation-suite/step_definitions/steps.js:7:16)</pre>
-                                </div>
                             
 
                             
@@ -1550,8 +1545,8 @@ Call log:
 
                                 
                                     
-                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step failed">
+                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
                                         </div>
                                     
                                 
@@ -1572,6 +1567,8 @@ Call log:
                                     
 
                                     
+                                        <a href="#error1-2-error" data-bs-toggle="collapse">+ Show Error</a>
+                                    
 
                                     
 
@@ -1588,6 +1585,13 @@ Call log:
                             </div>
 
                         
+                            
+                                <div id="error1-2-error" class="scenario-step-collapse collapse">
+                                    <pre class=info>Error: function timed out, ensure the promise resolves within 5000 milliseconds
+    at Timeout.(anonymous) (/home/runner/work/ecom_automation-suite/ecom_automation-suite/node_modules/@cucumber/cucumber/lib/time.js:54:20)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)</pre>
+                                </div>
                             
 
                             
@@ -1767,7 +1771,7 @@ Call log:
 
                     
                         <li>
-                            <span class="step skipped-background" data-bs-toggle="tooltip" title="Scenario is skipped">5</span>
+                            <span class="step skipped-background" data-bs-toggle="tooltip" title="Scenario is skipped">4</span>
                         </li>
                     
 
@@ -1777,6 +1781,10 @@ Call log:
                         </li>
                     
 
+                    
+                        <li>
+                            <span class="step passed-background" data-bs-toggle="tooltip" title="Scenario passed">1</span>
+                        </li>
                     
 
                     
@@ -1797,8 +1805,8 @@ Call log:
 
                                 
                                     
-                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step failed">
-                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-bs-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1819,8 +1827,6 @@ Call log:
                                     
 
                                     
-                                        <a href="#error2-1-error" data-bs-toggle="collapse">+ Show Error</a>
-                                    
 
                                     
 
@@ -1837,15 +1843,6 @@ Call log:
                             </div>
 
                         
-                            
-                                <div id="error2-1-error" class="scenario-step-collapse collapse">
-                                    <pre class=info>page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/
-Call log:
-  - navigating to "http://localhost:5173/", waiting until "load"
-
-    at CustomWorld.navigate (/home/runner/work/ecom_automation-suite/ecom_automation-suite/support/world.js:36:29)
-    at CustomWorld.(anonymous) (/home/runner/work/ecom_automation-suite/ecom_automation-suite/step_definitions/steps.js:7:16)</pre>
-                                </div>
                             
 
                             
@@ -1872,8 +1869,8 @@ Call log:
 
                                 
                                     
-                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step failed">
+                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
                                         </div>
                                     
                                 
@@ -1894,6 +1891,8 @@ Call log:
                                     
 
                                     
+                                        <a href="#error2-2-error" data-bs-toggle="collapse">+ Show Error</a>
+                                    
 
                                     
 
@@ -1910,6 +1909,13 @@ Call log:
                             </div>
 
                         
+                            
+                                <div id="error2-2-error" class="scenario-step-collapse collapse">
+                                    <pre class=info>Error: function timed out, ensure the promise resolves within 5000 milliseconds
+    at Timeout.(anonymous) (/home/runner/work/ecom_automation-suite/ecom_automation-suite/node_modules/@cucumber/cucumber/lib/time.js:54:20)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)</pre>
+                                </div>
                             
 
                             
@@ -2217,7 +2223,7 @@ Call log:
 
                     
                         <li>
-                            <span class="step skipped-background" data-bs-toggle="tooltip" title="Scenario is skipped">2</span>
+                            <span class="step skipped-background" data-bs-toggle="tooltip" title="Scenario is skipped">1</span>
                         </li>
                     
 
@@ -2227,6 +2233,10 @@ Call log:
                         </li>
                     
 
+                    
+                        <li>
+                            <span class="step passed-background" data-bs-toggle="tooltip" title="Scenario passed">1</span>
+                        </li>
                     
 
                     
@@ -2247,8 +2257,8 @@ Call log:
 
                                 
                                     
-                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step failed">
-                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-bs-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -2269,8 +2279,6 @@ Call log:
                                     
 
                                     
-                                        <a href="#error3-1-error" data-bs-toggle="collapse">+ Show Error</a>
-                                    
 
                                     
 
@@ -2287,15 +2295,6 @@ Call log:
                             </div>
 
                         
-                            
-                                <div id="error3-1-error" class="scenario-step-collapse collapse">
-                                    <pre class=info>page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/
-Call log:
-  - navigating to "http://localhost:5173/", waiting until "load"
-
-    at CustomWorld.navigate (/home/runner/work/ecom_automation-suite/ecom_automation-suite/support/world.js:36:29)
-    at CustomWorld.(anonymous) (/home/runner/work/ecom_automation-suite/ecom_automation-suite/step_definitions/steps.js:7:16)</pre>
-                                </div>
                             
 
                             
@@ -2322,8 +2321,8 @@ Call log:
 
                                 
                                     
-                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step failed">
+                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
                                         </div>
                                     
                                 
@@ -2344,6 +2343,8 @@ Call log:
                                     
 
                                     
+                                        <a href="#error3-2-error" data-bs-toggle="collapse">+ Show Error</a>
+                                    
 
                                     
 
@@ -2360,6 +2361,13 @@ Call log:
                             </div>
 
                         
+                            
+                                <div id="error3-2-error" class="scenario-step-collapse collapse">
+                                    <pre class=info>Error: function timed out, ensure the promise resolves within 5000 milliseconds
+    at Timeout.(anonymous) (/home/runner/work/ecom_automation-suite/ecom_automation-suite/node_modules/@cucumber/cucumber/lib/time.js:54:20)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)</pre>
+                                </div>
                             
 
                             
