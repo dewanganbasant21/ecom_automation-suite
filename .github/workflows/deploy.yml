@@ -29,6 +29,8 @@ jobs:
 
       - name: Run Automation Tests
         run: npm run test:playwright
+        env:
+          BASE_URL: https://ecomautomation-suite.vercel.app/
         continue-on-error: true
 
       - name: Deploy Report to GitHub Pages
