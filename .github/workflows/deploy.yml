@@ -1,0 +1,42 @@
+name: Run Tests and Publish Report
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: automation-suite/package-lock.json
+
+      - name: Install Dependencies
+        working-directory: automation-suite
+        run: npm install
+
+      - name: Install Playwright Browsers
+        working-directory: automation-suite
+        run: npx playwright install --with-deps chromium
+
+      - name: Run Automation Tests
+        working-directory: automation-suite
+        run: npm run test:playwright
+        continue-on-error: true
+
+      - name: Deploy Report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./automation-suite/reports/main_report
+          publish_branch: gh-pages

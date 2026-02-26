@@ -1,0 +1,21 @@
+{
+  "name": "automation-suite",
+  "version": "1.0.0",
+  "description": "Hybrid Playwright/Selenium Automation Framework",
+  "main": "runner.js",
+  "scripts": {
+    "test": "node runner.js",
+    "test:playwright": "set BROWSER_TYPE=playwright&& node runner.js",
+    "test:selenium": "set BROWSER_TYPE=selenium&& node runner.js"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^10.0.0",
+    "chai": "^4.3.7",
+    "chromedriver": "^121.0.0",
+    "fs-extra": "^11.1.1",
+    "multiple-cucumber-html-reporter": "^3.4.0",
+    "nodemailer": "^6.9.3",
+    "playwright": "^1.40.0",
+    "selenium-webdriver": "^4.10.0"
+  }
+}
