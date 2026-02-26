@@ -13,14 +13,17 @@ class CustomWorld extends World {
     }
 
     async initPlaywright() {
-        this.browser = await chromium.launch({ headless: true });
+        const isHeadless = process.env.HEADLESS !== 'false';
+        this.browser = await chromium.launch({ headless: isHeadless });
         this.context = await this.browser.newContext();
         this.page = await this.context.newPage();
     }
 
     async initSelenium() {
         let options = new chrome.Options();
-        options.addArguments('--headless');
+        if (process.env.HEADLESS !== 'false') {
+            options.addArguments('--headless');
+        }
         this.driver = await new Builder()
             .forBrowser('chrome')
             .setChromeOptions(options)
