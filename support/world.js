@@ -14,7 +14,10 @@ class CustomWorld extends World {
 
     async initPlaywright() {
         const isHeadless = process.env.HEADLESS !== 'false';
-        this.browser = await chromium.launch({ headless: isHeadless });
+        this.browser = await chromium.launch({
+            headless: isHeadless,
+            args: ['--no-sandbox', '--disable-dev-shm-usage']
+        });
         this.context = await this.browser.newContext();
         this.page = await this.context.newPage();
     }

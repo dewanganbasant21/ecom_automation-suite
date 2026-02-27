@@ -31,6 +31,8 @@ jobs:
         run: npm run test:playwright
         env:
           BASE_URL: https://ecomautomation-suite.vercel.app/
+          BROWSER_TYPE: playwright
+          HEADLESS: "true"
         continue-on-error: true
 
       - name: Deploy Report to GitHub Pages

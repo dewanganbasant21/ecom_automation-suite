@@ -3,11 +3,11 @@ const { expect } = require('chai');
 
 const BASE_URL = process.env.BASE_URL || 'http://localhost:5173';
 
-Given('I navigate to the e-commerce website', { timeout: 10000 }, async function () {
+Given('I navigate to the e-commerce website', { timeout: 30000 }, async function () {
     await this.navigate(BASE_URL);
 });
 
-When('I add {string} to the cart', async function (productName) {
+When('I add {string} to the cart', { timeout: 30000 }, async function (productName) {
     // We use the product ID in the selector as defined in App.jsx
     // In a real scenario, we might search for the product by text
     // For this demo, we'll map product names to IDs
@@ -21,62 +21,62 @@ When('I add {string} to the cart', async function (productName) {
     await this.click(`#add-to-cart-${productId}`);
 });
 
-Then('the cart should contain {int} item', async function (count) {
+Then('the cart should contain {int} item', { timeout: 30000 }, async function (count) {
     const text = await this.getText('#nav-cart');
     expect(text).to.contain(`Cart (${count})`);
 });
 
-Then('the cart should contain {int} items', async function (count) {
+Then('the cart should contain {int} items', { timeout: 30000 }, async function (count) {
     const text = await this.getText('#nav-cart');
     expect(text).to.contain(`Cart (${count})`);
 });
 
-When('I navigate to the cart page', async function () {
+When('I navigate to the cart page', { timeout: 30000 }, async function () {
     await this.click('#nav-cart');
 });
 
-Then('I should see {string} in the cart', async function (productName) {
+Then('I should see {string} in the cart', { timeout: 30000 }, async function (productName) {
     const text = await this.getText('#cart-list');
     expect(text).to.contain(productName);
 });
 
-When('I navigate to the components page', async function () {
+When('I navigate to the components page', { timeout: 30000 }, async function () {
     await this.click('#nav-components');
 });
 
-When('I expand the first accordion', async function () {
+When('I expand the first accordion', { timeout: 30000 }, async function () {
     await this.click('#accordion-header-1');
 });
 
-Then('I should see the accordion content', async function () {
+Then('I should see the accordion content', { timeout: 30000 }, async function () {
     const isVisible = await this.isVisible('#accordion-content-1');
     expect(isVisible).to.be.true;
 });
 
-When('I open the system configuration modal', async function () {
+When('I open the system configuration modal', { timeout: 30000 }, async function () {
     await this.click('#open-modal-btn');
 });
 
-Then('I should see the modal content', async function () {
+Then('I should see the modal content', { timeout: 30000 }, async function () {
     const isVisible = await this.isVisible('#modal-content');
     expect(isVisible).to.be.true;
 });
 
-When('I close the modal', async function () {
+When('I close the modal', { timeout: 30000 }, async function () {
     await this.click('#modal-close-btn');
 });
 
-Then('the modal should be closed', async function () {
+Then('the modal should be closed', { timeout: 30000 }, async function () {
     const isVisible = await this.isVisible('#modal-content');
     expect(isVisible).to.be.false;
 });
 
 // New Authentication Steps
-When('I navigate to the login page', async function () {
+When('I navigate to the login page', { timeout: 30000 }, async function () {
     await this.click('#header-login-btn');
 });
 
-When('I click on "Register"', async function () {
+When('I click on "Register"', { timeout: 30000 }, async function () {
     // We'll use a more specific selector or click by text
     if (this.browserType === 'playwright') {
         await this.page.click('text=Register');
@@ -87,15 +87,15 @@ When('I click on "Register"', async function () {
 });
 
 // Added missing navigation steps
-When('I navigate to the home page', async function () {
+When('I navigate to the home page', { timeout: 30000 }, async function () {
     await this.click('#nav-home');
 });
 
-When('I navigate back to the components page', async function () {
+When('I navigate back to the components page', { timeout: 30000 }, async function () {
     await this.click('#nav-components');
 });
 
-When('I register with name {string}, email {string}, and password {string}', async function (name, email, password) {
+When('I register with name {string}, email {string}, and password {string}', { timeout: 30000 }, async function (name, email, password) {
     if (this.browserType === 'playwright') {
         await this.page.fill('#register-name', name);
         await this.page.fill('#register-email', email);
@@ -108,21 +108,21 @@ When('I register with name {string}, email {string}, and password {string}', asy
     await this.click('#register-submit');
 });
 
-Then('I should be logged in as {string}', async function (expectedName) {
+Then('I should be logged in as {string}', { timeout: 30000 }, async function (expectedName) {
     const text = await this.getText('#user-display');
     expect(text.toLowerCase()).to.contain(expectedName.toLowerCase());
 });
 
-When('I logout', async function () {
+When('I logout', { timeout: 30000 }, async function () {
     await this.click('#logout-btn');
 });
 
-Then('I should see the login button', async function () {
+Then('I should see the login button', { timeout: 30000 }, async function () {
     const isVisible = await this.isVisible('#header-login-btn');
     expect(isVisible).to.be.true;
 });
 
-When('I login with email {string} and password {string}', async function (email, password) {
+When('I login with email {string} and password {string}', { timeout: 30000 }, async function (email, password) {
     if (this.browserType === 'playwright') {
         await this.page.fill('#login-email', email);
         await this.page.fill('#login-password', password);
@@ -134,7 +134,7 @@ When('I login with email {string} and password {string}', async function (email,
 });
 
 // New UX Steps
-Then('I should see the {string} confirmation', async function (text) {
+Then('I should see the {string} confirmation', { timeout: 30000 }, async function (text) {
     let content;
     if (this.browserType === 'playwright') {
         content = await this.page.textContent('#post-add-to-cart-overlay');
@@ -144,7 +144,7 @@ Then('I should see the {string} confirmation', async function (text) {
     expect(content).to.contain(text);
 });
 
-When('I click on text {string}', async function (btnText) {
+When('I click on text {string}', { timeout: 30000 }, async function (btnText) {
     if (this.browserType === 'playwright') {
         await this.page.click(`text=${btnText}`);
     } else {
@@ -168,12 +168,12 @@ When('I click on text {string}', async function (btnText) {
     }
 });
 
-Then('the accordion content should still be visible', async function () {
+Then('the accordion content should still be visible', { timeout: 30000 }, async function () {
     const isVisible = await this.isVisible('#accordion-content-1');
     expect(isVisible).to.be.true;
 });
 
-Then('I should see {string} items in the cart', async function (count) {
+Then('I should see {string} items in the cart', { timeout: 30000 }, async function (count) {
     const text = await this.getText('#nav-cart');
     expect(text).to.contain(`Cart (${count})`);
 });

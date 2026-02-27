@@ -5,10 +5,10 @@
   "main": "runner.js",
   "scripts": {
     "test": "node runner.js",
-    "test:playwright": "set BROWSER_TYPE=playwright&& node runner.js",
-    "test:playwright:headed": "set BROWSER_TYPE=playwright&& set HEADLESS=false&& node runner.js",
-    "test:selenium": "set BROWSER_TYPE=selenium&& node runner.js",
-    "test:selenium:headed": "set BROWSER_TYPE=selenium&& set HEADLESS=false&& node runner.js"
+    "test:playwright": "cross-env BROWSER_TYPE=playwright node runner.js",
+    "test:playwright:headed": "cross-env BROWSER_TYPE=playwright HEADLESS=false node runner.js",
+    "test:selenium": "cross-env BROWSER_TYPE=selenium node runner.js",
+    "test:selenium:headed": "cross-env BROWSER_TYPE=selenium HEADLESS=false node runner.js"
   },
   "dependencies": {
     "@cucumber/cucumber": "^10.0.0",
@@ -19,5 +19,8 @@
     "nodemailer": "^6.9.3",
     "playwright": "^1.40.0",
     "selenium-webdriver": "^4.10.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
