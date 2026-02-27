@@ -849,17 +849,17 @@ body.darkmode .navbar-text {
                 
             </div>
             <h1>Feature:
-                <small>E-commerce Website Functionality</small>
+                <small>E-commerce Website Enhancements and Auth</small>
             </h1>
             
                 <p>
-                    <strong>Description: </strong>   As a user<br>  I want to browse products and interact with components<br>  So that I can verify the website works correctly </p>
+                    <strong>Description: </strong>   As a user<br>  I want to register, login and have a better shopping experience<br>  So that I can securely manage my account and browse products </p>
                 
                <p><strong>File name:</strong>
-                    ecommerce.feature
+                    auth_and_ux.feature
                 </p>
                 <p><strong>Relative path:</strong>
-                    features/ecommerce.feature</p>
+                    features/auth_and_ux.feature</p>
             
         </div>
 
@@ -895,7 +895,7 @@ body.darkmode .navbar-text {
         <tr>
             <td class="chart">
                 <canvas id="scenario-chart"></canvas>
-                <div class="total">4</div>
+                <div class="total">3</div>
             </td>
             <td>
                 <table class="tile_info">
@@ -1046,7 +1046,717 @@ body.darkmode .navbar-text {
                     
                 </div>
 
-                <h2>Scenario: <small>Add product to cart</small></h2>
+                <h2>Scenario: <small>User Registration and Login</small></h2>
+
+                <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                    </li>
+
+                    
+
+                    
+
+                    
+                        <li>
+                            <span class="step skipped-background" data-bs-toggle="tooltip" title="Scenario is skipped">8</span>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <span class="step failed-background" data-bs-toggle="tooltip" title="Scenario failed">1</span>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <span class="step passed-background" data-bs-toggle="tooltip" title="Scenario passed">1</span>
+                        </li>
+                    
+
+                    
+
+                    
+                </ul>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="x_content" style="display: none;">
+                <div class="scenario-step-container"></div>
+                    
+                        
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-bs-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        I navigate to the e-commerce website
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step failed">
+                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">When </span>
+
+                                    
+                                        I navigate to the login page
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+                                        <a href="#error0-2-error" data-bs-toggle="collapse">+ Show Error</a>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+                                <div id="error0-2-error" class="scenario-step-collapse collapse">
+                                    <pre class=info>page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('#header-login-btn')
+
+    at CustomWorld.click (/home/runner/work/ecom_automation-suite/ecom_automation-suite/support/world.js:47:29)
+    at CustomWorld.(anonymous) (/home/runner/work/ecom_automation-suite/ecom_automation-suite/step_definitions/steps.js:76:16)</pre>
+                                </div>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        I click on "Register"
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        I register with name "Test User", email "test@example.com", and password "Pass123!"
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Then </span>
+
+                                    
+                                        I should be logged in as "Test User"
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">When </span>
+
+                                    
+                                        I logout
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Then </span>
+
+                                    
+                                        I should see the login button
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">When </span>
+
+                                    
+                                        I navigate to the login page
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        I login with email "test@example.com" and password "Pass123!"
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Then </span>
+
+                                    
+                                        I should be logged in as "test"
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel" style="height: auto;">
+            <div class="x_title">
+
+                <div class="tags">
+                    
+                        
+                        
+                    
+                </div>
+
+                <h2>Scenario: <small>Enhanced Add to Cart Flow</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -1179,7 +1889,7 @@ body.darkmode .navbar-text {
                                     
 
                                     
-                                        <a href="#error0-2-error" data-bs-toggle="collapse">+ Show Error</a>
+                                        <a href="#error1-2-error" data-bs-toggle="collapse">+ Show Error</a>
                                     
 
                                     
@@ -1198,11 +1908,13 @@ body.darkmode .navbar-text {
 
                         
                             
-                                <div id="error0-2-error" class="scenario-step-collapse collapse">
-                                    <pre class=info>Error: function timed out, ensure the promise resolves within 5000 milliseconds
-    at Timeout.(anonymous) (/home/runner/work/ecom_automation-suite/ecom_automation-suite/node_modules/@cucumber/cucumber/lib/time.js:54:20)
-    at listOnTimeout (node:internal/timers:581:17)
-    at process.processTimers (node:internal/timers:519:7)</pre>
+                                <div id="error1-2-error" class="scenario-step-collapse collapse">
+                                    <pre class=info>page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('#add-to-cart-1')
+
+    at CustomWorld.click (/home/runner/work/ecom_automation-suite/ecom_automation-suite/support/world.js:47:29)
+    at CustomWorld.(anonymous) (/home/runner/work/ecom_automation-suite/ecom_automation-suite/step_definitions/steps.js:21:16)</pre>
                                 </div>
                             
 
@@ -1240,7 +1952,7 @@ body.darkmode .navbar-text {
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        the cart should contain 1 item
+                                        I should see the "Added to Cart!" confirmation
                                         
                                     
 
@@ -1434,7 +2146,7 @@ body.darkmode .navbar-text {
                     
                 </div>
 
-                <h2>Scenario: <small>Interaction with Web Components - Accordion</small></h2>
+                <h2>Scenario: <small>Component Showcase Persistence</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -1447,7 +2159,7 @@ body.darkmode .navbar-text {
 
                     
                         <li>
-                            <span class="step skipped-background" data-bs-toggle="tooltip" title="Scenario is skipped">2</span>
+                            <span class="step skipped-background" data-bs-toggle="tooltip" title="Scenario is skipped">5</span>
                         </li>
                     
 
@@ -1567,7 +2279,7 @@ body.darkmode .navbar-text {
                                     
 
                                     
-                                        <a href="#error1-2-error" data-bs-toggle="collapse">+ Show Error</a>
+                                        <a href="#error2-2-error" data-bs-toggle="collapse">+ Show Error</a>
                                     
 
                                     
@@ -1586,11 +2298,13 @@ body.darkmode .navbar-text {
 
                         
                             
-                                <div id="error1-2-error" class="scenario-step-collapse collapse">
-                                    <pre class=info>Error: function timed out, ensure the promise resolves within 5000 milliseconds
-    at Timeout.(anonymous) (/home/runner/work/ecom_automation-suite/ecom_automation-suite/node_modules/@cucumber/cucumber/lib/time.js:54:20)
-    at listOnTimeout (node:internal/timers:581:17)
-    at process.processTimers (node:internal/timers:519:7)</pre>
+                                <div id="error2-2-error" class="scenario-step-collapse collapse">
+                                    <pre class=info>page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('#nav-components')
+
+    at CustomWorld.click (/home/runner/work/ecom_automation-suite/ecom_automation-suite/support/world.js:47:29)
+    at CustomWorld.(anonymous) (/home/runner/work/ecom_automation-suite/ecom_automation-suite/step_definitions/steps.js:44:16)</pre>
                                 </div>
                             
 
@@ -1742,135 +2456,12 @@ body.darkmode .navbar-text {
                     
                 
                         
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="x_panel" style="height: auto;">
-            <div class="x_title">
-
-                <div class="tags">
-                    
-                        
-                        
-                    
-                </div>
-
-                <h2>Scenario: <small>Interaction with Web Components - Modal</small></h2>
-
-                <ul class="nav navbar-right panel_toolbox">
-                    <li>
-                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
-                    </li>
-
-                    
-
-                    
-
-                    
-                        <li>
-                            <span class="step skipped-background" data-bs-toggle="tooltip" title="Scenario is skipped">4</span>
-                        </li>
-                    
-
-                    
-                        <li>
-                            <span class="step failed-background" data-bs-toggle="tooltip" title="Scenario failed">1</span>
-                        </li>
-                    
-
-                    
-                        <li>
-                            <span class="step passed-background" data-bs-toggle="tooltip" title="Scenario passed">1</span>
-                        </li>
-                    
-
-                    
-
-                    
-                </ul>
-
-                <div class="clearfix"></div>
-            </div>
-
-            <div class="x_content" style="display: none;">
-                <div class="scenario-step-container"></div>
-                    
-                        
-                
-                        
                             <div class="scenario-step-container">
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-bs-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Given </span>
-
-                                    
-                                        I navigate to the e-commerce website
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step failed">
-                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
+                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
                                         </div>
                                     
                                 
@@ -1879,7 +2470,7 @@ body.darkmode .navbar-text {
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        I navigate to the components page
+                                        I navigate to the home page
                                         
                                     
 
@@ -1890,8 +2481,6 @@ body.darkmode .navbar-text {
                                 
                                     
 
-                                    
-                                        <a href="#error2-2-error" data-bs-toggle="collapse">+ Show Error</a>
                                     
 
                                     
@@ -1909,13 +2498,6 @@ body.darkmode .navbar-text {
                             </div>
 
                         
-                            
-                                <div id="error2-2-error" class="scenario-step-collapse collapse">
-                                    <pre class=info>Error: function timed out, ensure the promise resolves within 5000 milliseconds
-    at Timeout.(anonymous) (/home/runner/work/ecom_automation-suite/ecom_automation-suite/node_modules/@cucumber/cucumber/lib/time.js:54:20)
-    at listOnTimeout (node:internal/timers:581:17)
-    at process.processTimers (node:internal/timers:519:7)</pre>
-                                </div>
                             
 
                             
@@ -1952,7 +2534,7 @@ body.darkmode .navbar-text {
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        I open the system configuration modal
+                                        I navigate back to the components page
                                         
                                     
 
@@ -2016,395 +2598,7 @@ body.darkmode .navbar-text {
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        I should see the modal content
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">When </span>
-
-                                    
-                                        I close the modal
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Then </span>
-
-                                    
-                                        the modal should be closed
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="x_panel" style="height: auto;">
-            <div class="x_title">
-
-                <div class="tags">
-                    
-                        
-                        
-                    
-                </div>
-
-                <h2>Scenario: <small>Intentionally fail for rerun demonstration</small></h2>
-
-                <ul class="nav navbar-right panel_toolbox">
-                    <li>
-                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
-                    </li>
-
-                    
-
-                    
-
-                    
-                        <li>
-                            <span class="step skipped-background" data-bs-toggle="tooltip" title="Scenario is skipped">1</span>
-                        </li>
-                    
-
-                    
-                        <li>
-                            <span class="step failed-background" data-bs-toggle="tooltip" title="Scenario failed">1</span>
-                        </li>
-                    
-
-                    
-                        <li>
-                            <span class="step passed-background" data-bs-toggle="tooltip" title="Scenario passed">1</span>
-                        </li>
-                    
-
-                    
-
-                    
-                </ul>
-
-                <div class="clearfix"></div>
-            </div>
-
-            <div class="x_content" style="display: none;">
-                <div class="scenario-step-container"></div>
-                    
-                        
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-bs-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Given </span>
-
-                                    
-                                        I navigate to the e-commerce website
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step failed">
-                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">When </span>
-
-                                    
-                                        I add "Nebula Sounds" to the cart
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-                                        <a href="#error3-2-error" data-bs-toggle="collapse">+ Show Error</a>
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-                                <div id="error3-2-error" class="scenario-step-collapse collapse">
-                                    <pre class=info>Error: function timed out, ensure the promise resolves within 5000 milliseconds
-    at Timeout.(anonymous) (/home/runner/work/ecom_automation-suite/ecom_automation-suite/node_modules/@cucumber/cucumber/lib/time.js:54:20)
-    at listOnTimeout (node:internal/timers:581:17)
-    at process.processTimers (node:internal/timers:519:7)</pre>
-                                </div>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-bs-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Then </span>
-
-                                    
-                                        I should see "999" items in the cart
+                                        the accordion content should still be visible
                                         
                                     
 
@@ -2512,7 +2706,7 @@ body.darkmode .navbar-text {
                     datasets: [{
                         data: [
                             0,
-                            4,
+                            3,
                             0,
                             0,
                             0,
