@@ -11,8 +11,14 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout Repository
+      - name: Checkout Automation Suite
         uses: actions/checkout@v4
+
+      - name: Checkout E-commerce Site
+        uses: actions/checkout@v4
+        with:
+          repository: dewanganbasant21/my-ecom-store
+          path: ecommerce-site
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -21,7 +27,14 @@ jobs:
           cache: 'npm'
           cache-dependency-path: package-lock.json
 
-      - name: Install Dependencies
+      - name: Install & Start E-commerce Server
+        run: |
+          cd ecommerce-site
+          npm install
+          npm run dev &
+          npx --yes wait-on http://localhost:5173
+
+      - name: Install Automation Suite Dependencies
         run: npm install
 
       - name: Install Playwright Browsers
@@ -30,7 +43,7 @@ jobs:
       - name: Run Automation Tests
         run: npm run test:playwright
         env:
-          BASE_URL: https://ecomautomation-suite.vercel.app/
+          BASE_URL: http://localhost:5173/
           BROWSER_TYPE: playwright
           HEADLESS: "true"
         continue-on-error: true
